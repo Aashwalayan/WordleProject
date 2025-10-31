@@ -59,7 +59,6 @@ public class WordleGUI {
             if (guess.length() != 5) {
                 JOptionPane.showMessageDialog(f, "Invalid!, Enter a 5 letter word.");
             } else if (guess.equals(wordToBeGuessed.toUpperCase())) {
-                // All correct — make all green
                 for (int i = 0; i < 5; i++) {
                     boxes[(numberOfGuesses - 1) * 5 + i].setText(String.valueOf(guess.charAt(i)));
                     boxes[(numberOfGuesses - 1) * 5 + i].setOpaque(true);
@@ -92,3 +91,4 @@ public class WordleGUI {
         f.setVisible(true);
     }
 }
+
